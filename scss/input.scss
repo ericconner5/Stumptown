@@ -1,8 +1,12 @@
 @import "variables";
 
-.header, .big-row, .cart-row, .logo-box, .logo-row {
+.header, .big-row, .cart-row, .logo-box, .logo-row, .kit-row, .kit-text-row, .price-text-row, .add-text-row, .product-pair-row-1, .product-pair-row-2, .product-pair-row-3, .product-pair-row-4, .kanteen {
   display: flex;
   flex-direction: row;
+}
+.main-body-column, .product-pair-column-1, .product-pair-column-2 {
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
@@ -67,25 +71,63 @@
 }
 
 .main-body-column {
-  display: flex;
-  flex-direction: column;
   width: auto;
 }
 
-.cart-row {
+.cart-row, {
+
   justify-content: space-between;
   width: auto;
   margin-left: 1%;
   margin-right: 1%;
   padding-top: 2%;
 }
-.logo-row {
+.logo-row, .kit-row, .kanteen {
   justify-content: center;
-  margin-top: 10%;
+  margin-top: 4%;
   width: auto;
 }
 
 #main-logo {
   height: 416px;
   width: 655px;
+}
+
+#kit {
+  height: 582px;
+}
+
+.kit-text-row, .price-text-row, .add-text-row  {
+  justify-content: center;
+}
+
+.main-text {
+  color: black;
+  font: {
+  size: 1em;
+  weight: 700;
+  }
+}
+
+.main-text-thin {
+  color: black;
+  size: 1em;
+  weight: 100;
+}
+
+.main-text-coffee {
+  color: $coffee-color;
+  font: {
+    size: 1em !important;
+    weight: 400;
+  }
+}
+
+.product-pair-row-1, .product-pair-row-2, .product-pair-row-3, .product-pair-row-4 {
+  justify-content: space-around;
+}
+
+.product-pair-column-1, .product-pair-column-2 {
+  justify-content: space-between;
+
 }
