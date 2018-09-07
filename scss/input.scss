@@ -1,0 +1,32 @@
+@import "variables";
+
+.header {
+  // line-height: 18px !important;
+  display: flex;
+  flex-direction: row;
+  // box-sizing: border-box;
+  line-height: 42px;
+  width: 100%;
+  background-color: $coffee-color;
+}
+.header-text, a {
+  a {
+    text-decoration: underline;
+  }
+  margin: auto;
+  z-index: 999;
+  font-family: $font-stump;
+  color: white;
+  // line-height: 14px !important;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  text-align:center;
+}
+
+.big-picture {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+}
