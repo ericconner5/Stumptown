@@ -1,6 +1,6 @@
 # Stumptown Mock-Up
 
-#### A mock-up site for Stumptown Coffee, {7 Sept 2018}_
+#### A mock-up site for Stumptown Coffee, {7 Sept 2018}
 
 #### By Eric Conner
 
