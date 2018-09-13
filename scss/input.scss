@@ -1,18 +1,32 @@
 @import "variables";
 
-.header, .big-row, .cart-row, .logo-box, .logo-row, .kit-row, .kit-text-row, .price-text-row, .add-text-row, .product-pair-row-1, .product-pair-row-2, .product-pair-row-3, .product-pair-row-4, .kanteen {
+body {
+  background-color: $background-color;
+  max-width: 100%;
+}
+
+* {
+  font-family: $font-stump;
+}
+
+@mixin flex-row {
   display: flex;
   flex-direction: row;
 }
-.main-body-column, .product-pair-column-1, .product-pair-column-2 {
+
+@mixin flex-column {
   display: flex;
   flex-direction: column;
 }
+.main-body-column {
+  @include flex-column;
+
+}
 
 .header {
+  @include flex-row;
   flex-wrap: nowrap;
   line-height: 54px;
-  min-width: 100%;
   background-color: $coffee-color;
   justify-content: center;
   position: relative;
@@ -23,7 +37,6 @@
   }
   padding-top: 12px;
   z-index: 999;
-  font-family: $font-stump;
   color: white;
   font-size: 14px;
   font-style: normal;
@@ -36,6 +49,7 @@
 }
 
 .big-row {
+  @include flex-row;
   justify-content: space-around;
 
 }
@@ -58,31 +72,21 @@
   height: 1300px;
   position: absolute;
   justify-content: center;
-  font-family: $font-stump;
+  // font-family: $font-stump;
   // margin: -400px 0px 440px 0px;
 }
 
-.shop-now-button {
-
-}
-
-.main-body {
-  background-color: $background-color;
-}
-
-.main-body-column {
-  width: auto;
-}
-
-.cart-row, {
-
+.cart-row {
+  @include flex-row;
   justify-content: space-between;
   width: auto;
   margin-left: 1%;
   margin-right: 1%;
   padding-top: 2%;
 }
+
 .logo-row, .kit-row, .kanteen {
+  @include flex-row;
   justify-content: center;
   margin-top: 4%;
   width: auto;
@@ -98,6 +102,7 @@
 }
 
 .kit-text-row, .price-text-row, .add-text-row  {
+  @include flex-row;
   justify-content: center;
 }
 
@@ -124,10 +129,28 @@
 }
 
 .product-pair-row-1, .product-pair-row-2, .product-pair-row-3, .product-pair-row-4 {
+  @include flex-row;
   justify-content: space-around;
+}
+.record {
+  position: relative;
+  width: 50%;
+
+  img {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    min-width: 400px;
+
+  }
 }
 
 .product-pair-column-1, .product-pair-column-2 {
+  @include flex-row;
   justify-content: space-between;
+
 
 }

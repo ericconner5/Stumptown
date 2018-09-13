@@ -1,17 +1,22 @@
-.header, .big-row, .cart-row, .logo-box, .logo-row, .kit-row, .kit-text-row, .price-text-row, .add-text-row, .product-pair-row-1, .product-pair-row-2, .product-pair-row-3, .product-pair-row-4, .kanteen {
-  display: flex;
-  flex-direction: row;
+body {
+  background-color: #f6f5f3;
+  max-width: 100%;
 }
 
-.main-body-column, .product-pair-column-1, .product-pair-column-2 {
+* {
+  font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
+}
+
+.main-body-column {
   display: flex;
   flex-direction: column;
 }
 
 .header {
+  display: flex;
+  flex-direction: row;
   flex-wrap: nowrap;
   line-height: 54px;
-  min-width: 100%;
   background-color: rgba(191, 149, 90, 0.95);
   justify-content: center;
   position: relative;
@@ -20,7 +25,6 @@
 .header-text, a {
   padding-top: 12px;
   z-index: 999;
-  font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
   color: white;
   font-size: 14px;
   font-style: normal;
@@ -35,6 +39,8 @@
 }
 
 .big-row {
+  display: flex;
+  flex-direction: row;
   justify-content: space-around;
 }
 
@@ -54,18 +60,11 @@
   height: 1300px;
   position: absolute;
   justify-content: center;
-  font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
-}
-
-.main-body {
-  background-color: #f6f5f3;
-}
-
-.main-body-column {
-  width: auto;
 }
 
 .cart-row {
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
   width: auto;
   margin-left: 1%;
@@ -74,6 +73,8 @@
 }
 
 .logo-row, .kit-row, .kanteen {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   margin-top: 4%;
   width: auto;
@@ -89,6 +90,8 @@
 }
 
 .kit-text-row, .price-text-row, .add-text-row {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
 }
 
@@ -111,10 +114,28 @@
 }
 
 .product-pair-row-1, .product-pair-row-2, .product-pair-row-3, .product-pair-row-4 {
+  display: flex;
+  flex-direction: row;
   justify-content: space-around;
 }
 
+.record {
+  position: relative;
+  width: 50%;
+}
+.record img {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  min-width: 400px;
+}
+
 .product-pair-column-1, .product-pair-column-2 {
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }
 
