@@ -14,10 +14,20 @@ A mock-up website for Stumptown Coffee Roasters made using CSS styling.
 * Launch the index.html with an internet browser
 * Compare with Stumptown's very own landing page
 
+Stumptown's site:
 
+![](img/Stumptown-landing-page-1.png)
+![](img/Stumptown-landing-page-2.png)
+![](img/Stumptown-landing-page-3.png)
+
+My mock-up site:
+![](img/mock-up-1.png)
+![](img/mock-up-2.png)
+![](img/mock-up-3.png)
+![](img/mock-up-4.png)
 ## Known Bugs
 
-The links aren't functional and there are some styling kinks to work out.
+The links aren't functional and there are some styling kinks to work out. The flex-box for the vinyl item is wonky. The shop now button isn't stylized.
 
 ## Support and contact details
 
